@@ -1,0 +1,26 @@
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #speakers {
+    padding: 20px 0; }
+
+  .speakers-head, .speakers-footer {
+    margin: 20px 0; }
+
+  .row-item-col {
+    padding: 20px 0; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 600px) {
+  #header {
+    min-height: 300px; }
+    #header h1 {
+      font-size: 20px; }
+    #header p {
+      font-size: 16px; }
+    #header .section-center {
+      max-width: 320px; }
+    #header .section-btn {
+      font-size: 15px; } }
+/* Extra Small Devices, Phones */
+
+/*# sourceMappingURL=media.css.map */
