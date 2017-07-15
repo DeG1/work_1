@@ -7,15 +7,19 @@
 @media only screen and (max-width : 992px) {
 	#speakers{
 		padding: 20px 0;
+		.row-item-col{
+			margin: 20px 0;
+		}
+		.row-item{
+			margin-top: 40px;
+		}
 	}
 	
 	%speakers-head{
 		margin: 20px 0;
 	}
 	
-	.row-item-col{
-		padding: 20px 0;
-	}
+
 	
 }
 
@@ -26,6 +30,11 @@
 	.speakers-footer{
 		@extend %speakers-head;
 	}
+	
+#events{
+	@extend #speakers;
+	
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -56,5 +65,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	#event{
+			.row-item{
+			margin-top: 10px;
+		}
+	}
 }

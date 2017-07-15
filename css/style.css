@@ -1,14 +1,15 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  #speakers {
+  #speakers, #events {
     padding: 20px 0; }
+    #speakers .row-item-col, #events .row-item-col {
+      margin: 20px 0; }
+    #speakers .row-item, #events .row-item {
+      margin-top: 40px; }
 
   .speakers-head, .speakers-footer {
-    margin: 20px 0; }
-
-  .row-item-col {
-    padding: 20px 0; } }
+    margin: 20px 0; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 600px) {
   #header {
@@ -22,6 +23,9 @@
     #header .section-btn {
       font-size: 15px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #event .row-item {
+    margin-top: 10px; } }
 html, body {
   height: 100%; }
 
@@ -104,33 +108,33 @@ h2 {
         color: #fff; }
 
 /*speakers */
-#speakers {
+#speakers, #events {
   padding: 90px 0;
   border-bottom: 2px solid #f0f0f1; }
-  #speakers h2 {
+  #speakers h2, #events h2 {
     color: #828689; }
-  #speakers .large {
+  #speakers .large, #events .large {
     color: #828689;
     font-size: 22px;
     margin-bottom: 20px; }
-  #speakers .section-tabs {
+  #speakers .section-tabs, #events .section-tabs {
     border: 3px solid #ececec;
     border-radius: 2px; }
-    #speakers .section-tabs .tab-content {
+    #speakers .section-tabs .tab-content, #events .section-tabs .tab-content {
       padding: 25px 20px; }
-      #speakers .section-tabs .tab-content ul {
+      #speakers .section-tabs .tab-content ul, #events .section-tabs .tab-content ul {
         padding-left: 10px; }
-        #speakers .section-tabs .tab-content ul li {
+        #speakers .section-tabs .tab-content ul li, #events .section-tabs .tab-content ul li {
           line-height: 30px; }
-          #speakers .section-tabs .tab-content ul li i {
+          #speakers .section-tabs .tab-content ul li i, #events .section-tabs .tab-content ul li i {
             font-size: 15px;
             color: #2cc7c1;
             margin-right: 10px; }
-    #speakers .section-tabs .nav-tabs li:not(.active) {
+    #speakers .section-tabs .nav-tabs li:not(.active), #events .section-tabs .nav-tabs li:not(.active) {
       background: #ececec; }
-    #speakers .section-tabs .nav-tabs li a {
+    #speakers .section-tabs .nav-tabs li a, #events .section-tabs .nav-tabs li a {
       color: #abb1ba; }
-    #speakers .section-tabs .nav-tabs li.active a {
+    #speakers .section-tabs .nav-tabs li.active a, #events .section-tabs .nav-tabs li.active a {
       color: #9097a1; }
 
 .section-tabs .nav-tabs.nav-justified li a, .section-tabs .nav-tabs.nav-justified li.active a, .section-tabs .nav-tabs.nav-justified li.active a:focus, .section-tabs .nav-tabs.nav-justified li.active a:hover {
@@ -180,5 +184,67 @@ h2 {
 
 .speakers-footer {
   margin-top: 70px; }
+
+#events {
+  padding: 90px 0; }
+  #events .link {
+    text-transform: uppercase;
+    font-size: 17px; }
+  #events .time {
+    background: #2cc7c1;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 25px; }
+  #events .collapse-link {
+    color: #747a84;
+    font-size: 18px;
+    font-weight: 500; }
+    #events .collapse-link:hover {
+      color: #747a84; }
+  #events .collapse-state {
+    color: #2cc7c1; }
+  #events .collapse p {
+    color: #999; }
+  #events .tab-collapse {
+    margin-bottom: 20px; }
+  #events .section-tabs {
+    border: 3px solid #ececec;
+    border-radius: 2px; }
+    #events .section-tabs .tab-content {
+      padding: 25px 20px; }
+      #events .section-tabs .tab-content ul {
+        padding-left: 10px; }
+        #events .section-tabs .tab-content ul li {
+          line-height: 30px; }
+          #events .section-tabs .tab-content ul li i {
+            font-size: 15px;
+            color: #2cc7c1;
+            margin-right: 10px; }
+    #events .section-tabs .nav-tabs li:not(.active) {
+      background: #ececec; }
+    #events .section-tabs .nav-tabs li a {
+      color: #abb1ba; }
+    #events .section-tabs .nav-tabs li.active a {
+      color: #9097a1; }
+  #events .row-item {
+    margin-top: 100px; }
+  #events .carousel-indicators {
+    left: 0;
+    bottom: 10px;
+    margin: 0;
+    margin-left: 20px;
+    width: auto; }
+    #events .carousel-indicators li {
+      border: 1px solid #2cc7c1;
+      background: #fff;
+      height: 12px;
+      width: 12px; }
+      #events .carousel-indicators li.active {
+        background: #2cc7c1;
+        height: 14px;
+        width: 14px; }
 
 /*# sourceMappingURL=style.css.map */

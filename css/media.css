@@ -1,14 +1,15 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  #speakers {
+  #speakers, #events {
     padding: 20px 0; }
+    #speakers .row-item-col, #events .row-item-col {
+      margin: 20px 0; }
+    #speakers .row-item, #events .row-item {
+      margin-top: 40px; }
 
   .speakers-head, .speakers-footer {
-    margin: 20px 0; }
-
-  .row-item-col {
-    padding: 20px 0; } }
+    margin: 20px 0; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 600px) {
   #header {
@@ -22,5 +23,8 @@
     #header .section-btn {
       font-size: 15px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #event .row-item {
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=media.css.map */
