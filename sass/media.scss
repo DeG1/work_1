@@ -7,19 +7,25 @@
 @media only screen and (max-width : 992px) {
 	#speakers{
 		padding: 20px 0;
+	}
+	
 		.row-item-col{
 			margin: 20px 0;
 		}
 		.row-item{
 			margin-top: 40px;
 		}
-	}
 	
 	%speakers-head{
 		margin: 20px 0;
 	}
 	
-
+	#sponsors{
+		padding: 20px 0 0;
+		img{
+			margin-bottom: 20px;
+		}
+	}
 	
 }
 
@@ -34,6 +40,14 @@
 #events{
 	@extend #speakers;
 	
+}
+
+#form{
+	@extend #speakers;
+}
+
+#contacts{
+	@extend #speakers;
 }
 
 /* Small Devices, Tablets */

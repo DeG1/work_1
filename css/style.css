@@ -1,15 +1,22 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  #speakers, #events {
+  #speakers, #events, #form, #contacts {
     padding: 20px 0; }
-    #speakers .row-item-col, #events .row-item-col {
-      margin: 20px 0; }
-    #speakers .row-item, #events .row-item {
-      margin-top: 40px; }
+
+  .row-item-col {
+    margin: 20px 0; }
+
+  .row-item {
+    margin-top: 40px; }
 
   .speakers-head, .speakers-footer {
-    margin: 20px 0; } }
+    margin: 20px 0; }
+
+  #sponsors {
+    padding: 20px 0 0; }
+    #sponsors img {
+      margin-bottom: 20px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 600px) {
   #header {
@@ -37,12 +44,12 @@ body {
   font-weight: 400;
   min-width: 320px; }
 
-a, .section-tabs .nav-tabs.nav-justified li.active a:focus, .section-tabs .nav-tabs.nav-justified li.active a:hover {
+a, .section-tabs .nav-tabs.nav-justified li.active a:focus, .section-tabs .nav-tabs.nav-justified li.active a:hover, #contacts .contacts p {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-style: 17px;
   color: #2cc7c1; }
-  a:hover, .section-tabs .nav-tabs.nav-justified li.active a:hover {
+  a:hover, .section-tabs .nav-tabs.nav-justified li.active a:hover, #contacts .contacts p:hover {
     color: #2cc7c1; }
 
 img {
@@ -108,36 +115,50 @@ h2 {
         color: #fff; }
 
 /*speakers */
-#speakers, #events {
+#speakers, #events, #form, #contacts {
   padding: 90px 0;
   border-bottom: 2px solid #f0f0f1; }
-  #speakers h2, #events h2 {
+  #speakers h2, #events h2, #form h2, #contacts h2 {
     color: #828689; }
-  #speakers .large, #events .large {
+  #speakers .large, #events .large, #form .large, #contacts .large {
     color: #828689;
     font-size: 22px;
     margin-bottom: 20px; }
-  #speakers .section-tabs, #events .section-tabs {
+  #speakers .btn, #events .btn, #form .btn, #contacts .btn {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    color: #fff;
+    transition: background .5s; }
+  #speakers .btn-primary, #events .btn-primary, #form .btn-primary, #contacts .btn-primary {
+    background: #7ea4e8; }
+    #speakers .btn-primary:hover, #events .btn-primary:hover, #form .btn-primary:hover, #contacts .btn-primary:hover {
+      background: #6787c2; }
+  #speakers .section-tabs, #events .section-tabs, #form .section-tabs, #contacts .section-tabs {
     border: 3px solid #ececec;
     border-radius: 2px; }
-    #speakers .section-tabs .tab-content, #events .section-tabs .tab-content {
+    #speakers .section-tabs .tab-content, #events .section-tabs .tab-content, #form .section-tabs .tab-content, #contacts .section-tabs .tab-content {
       padding: 25px 20px; }
-      #speakers .section-tabs .tab-content ul, #events .section-tabs .tab-content ul {
+      #speakers .section-tabs .tab-content ul, #events .section-tabs .tab-content ul, #form .section-tabs .tab-content ul, #contacts .section-tabs .tab-content ul {
         padding-left: 10px; }
-        #speakers .section-tabs .tab-content ul li, #events .section-tabs .tab-content ul li {
+        #speakers .section-tabs .tab-content ul li, #events .section-tabs .tab-content ul li, #form .section-tabs .tab-content ul li, #contacts .section-tabs .tab-content ul li {
           line-height: 30px; }
-          #speakers .section-tabs .tab-content ul li i, #events .section-tabs .tab-content ul li i {
+          #speakers .section-tabs .tab-content ul li i, #events .section-tabs .tab-content ul li i, #form .section-tabs .tab-content ul li i, #contacts .section-tabs .tab-content ul li i {
             font-size: 15px;
             color: #2cc7c1;
             margin-right: 10px; }
-    #speakers .section-tabs .nav-tabs li:not(.active), #events .section-tabs .nav-tabs li:not(.active) {
+    #speakers .section-tabs .nav-tabs li:not(.active), #events .section-tabs .nav-tabs li:not(.active), #form .section-tabs .nav-tabs li:not(.active), #contacts .section-tabs .nav-tabs li:not(.active) {
       background: #ececec; }
-    #speakers .section-tabs .nav-tabs li a, #events .section-tabs .nav-tabs li a {
+    #speakers .section-tabs .nav-tabs li a, #events .section-tabs .nav-tabs li a, #form .section-tabs .nav-tabs li a, #contacts .section-tabs .nav-tabs li a, #speakers .section-tabs .nav-tabs li #contacts .contacts p, #events .section-tabs .nav-tabs li #contacts .contacts p, #form .section-tabs .nav-tabs li #contacts .contacts p, #contacts .section-tabs .nav-tabs li .contacts p, #contacts .contacts .section-tabs .nav-tabs li p {
       color: #abb1ba; }
-    #speakers .section-tabs .nav-tabs li.active a, #events .section-tabs .nav-tabs li.active a {
+    #speakers .section-tabs .nav-tabs li.active a, #events .section-tabs .nav-tabs li.active a, #form .section-tabs .nav-tabs li.active a, #contacts .section-tabs .nav-tabs li.active a, #speakers .section-tabs .nav-tabs li.active #contacts .contacts p, #events .section-tabs .nav-tabs li.active #contacts .contacts p, #form .section-tabs .nav-tabs li.active #contacts .contacts p, #contacts .section-tabs .nav-tabs li.active .contacts p, #contacts .contacts .section-tabs .nav-tabs li.active p {
       color: #9097a1; }
 
-.section-tabs .nav-tabs.nav-justified li a, .section-tabs .nav-tabs.nav-justified li.active a, .section-tabs .nav-tabs.nav-justified li.active a:focus, .section-tabs .nav-tabs.nav-justified li.active a:hover {
+.section-tabs .nav-tabs.nav-justified li a, .section-tabs .nav-tabs.nav-justified li.active a, .section-tabs .nav-tabs.nav-justified li.active a:focus, .section-tabs .nav-tabs.nav-justified li.active a:hover, .section-tabs .nav-tabs.nav-justified li #contacts .contacts p, #contacts .contacts .section-tabs .nav-tabs.nav-justified li p {
   border-radius: 0;
   border: none;
   font-family: Ubuntu, sans-serif;
@@ -151,7 +172,7 @@ h2 {
   .speakers-head h2 {
     color: #6a7079; }
 
-.speakers h3 {
+.speakers h3, .speakers #contacts h4, #contacts .speakers h4 {
   color: #777a7d;
   font-size: 20px;
   font-family: Ubuntu, sans-serif;
@@ -179,7 +200,7 @@ h2 {
     opacity: .2; }
   .speakers .item > div:hover .back {
     opacity: 1; }
-  .speakers .item > div:hover h3 {
+  .speakers .item > div:hover h3, .speakers .item > div:hover #contacts h4, #contacts .speakers .item > div:hover h4 {
     color: #6bd8d3; }
 
 .speakers-footer {
@@ -225,9 +246,9 @@ h2 {
             margin-right: 10px; }
     #events .section-tabs .nav-tabs li:not(.active) {
       background: #ececec; }
-    #events .section-tabs .nav-tabs li a {
+    #events .section-tabs .nav-tabs li a, #events .section-tabs .nav-tabs li #contacts .contacts p, #contacts .contacts #events .section-tabs .nav-tabs li p {
       color: #abb1ba; }
-    #events .section-tabs .nav-tabs li.active a {
+    #events .section-tabs .nav-tabs li.active a, #events .section-tabs .nav-tabs li.active #contacts .contacts p, #contacts .contacts #events .section-tabs .nav-tabs li.active p {
       color: #9097a1; }
   #events .row-item {
     margin-top: 100px; }
@@ -246,5 +267,120 @@ h2 {
         background: #2cc7c1;
         height: 14px;
         width: 14px; }
+  #events .btn {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    color: #fff;
+    transition: background .5s; }
+  #events .btn-primary {
+    background: #7ea4e8; }
+    #events .btn-primary:hover {
+      background: #6787c2; }
+
+/* Form */
+#form {
+  padding: 90px 0;
+  background: #f3f3f3; }
+  #form .btn {
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    color: #fff;
+    transition: background .5s; }
+  #form .btn-primary {
+    background: #7ea4e8; }
+    #form .btn-primary:hover {
+      background: #6787c2; }
+  #form .section-form {
+    padding: 40px;
+    background: #fff;
+    border-radius: 2px;
+    margin-top: 50px; }
+    #form .section-form input, #form .section-form select {
+      height: 44px;
+      background: #efefef;
+      padding-right: 25px; }
+
+.form-sel {
+  height: 44px;
+  width: 100%; }
+
+.form-control, .form-control:focus {
+  border: 2px solid #95e3e0;
+  background: #fff;
+  box-shadow: none; }
+
+span.form-control-feedback {
+  right: 10px;
+  line-height: 44px; }
+
+.select2-container--default .select2-selection--single {
+  height: 44px;
+  text-align: left;
+  background: #efefef; }
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 10px; }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 44px;
+    color: #bebebe; }
+
+.select2-container--open .select2-selection--single {
+  background: #2cc7c1; }
+  .select2-container--open .select2-selection--single .select2-selection__rendered {
+    color: #fff; }
+
+li.select2-results__option:first-child, .section-tabs .nav-tabs.nav-justified li.select2-results__option.active:first-child, .select2-container--default li.select2-results__option--highlighted[area-selected]:first-child, .select2-container--default li.select2-results__option[area-selected="true"]:first-child {
+  display: none; }
+
+.select2-results__option, .select2-container--default .select2-results__option--highlighted[area-selected], .select2-container--default .select2-results__option[area-selected="true"] {
+  color: #2cc7c1; }
+
+.select2-results__option, .select2-container--default .select2-results__option--highlighted[area-selected], .select2-container--default .select2-results__option[area-selected="true"] {
+  background: #525b64; }
+
+/* Sponsors */
+#sponsors {
+  background: #fff;
+  padding: 60px 0; }
+
+/* Contacts*/
+#contacts {
+  border-bottom: none;
+  background: #525b64;
+  padding: 70px 0; }
+  #contacts h3, #contacts h4 {
+    color: #fff;
+    margin: 0 0 25px; }
+    #contacts h3 span, #contacts h4 span {
+      font-weight: 700; }
+  #contacts h4 {
+    font-size: 20px; }
+  #contacts p {
+    color: #cdd0d2; }
+  #contacts a, #contacts .contacts p {
+    font-weight: 500;
+    color: #2cc7c1; }
+  #contacts .contacts p i {
+    margin-right: 10px; }
+  #contacts .social img {
+    margin-right: 20px; }
+
+/* Copy*/
+#copy {
+  background: #3f464c;
+  padding: 15px 0; }
+  #copy p {
+    margin: 0;
+    color: #cacaca;
+    font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
